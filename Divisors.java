@@ -7,7 +7,7 @@ public class Divisors {
 		int index=1;
 		while(index<=num)
 		{
-			if(num%index==0) System.err.println(index);
+			if(num%index==0) System.out.println(index);
 			index++;
 		}
 	}
