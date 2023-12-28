@@ -31,7 +31,7 @@ public class OneOfEachStats {
 		while(boy!=girl)
 		{
 			rnd = generator.nextDouble();
-			if(rnd>=0 && rnd <0.5) 
+			if(rnd>=0.5 && rnd <1) 
 			{
 				sum=sum+1;
 				tempSum=tempSum+1;
@@ -63,13 +63,13 @@ public class OneOfEachStats {
 		}
 		int commen = 0;
 		//check witch catagory is most commen
-		if(Math.max(family2, family3)==family2)
+		if((Math.max(family2, family3)==family2) && family2>family4)
 		{
 			commen =2;
 		}
 			else
 			{
-			if(Math.max(family3,family4)==family3)
+			if((Math.max(family3,family4)==family3) && family3>family4)
 			{
 				commen=3;
 			}
