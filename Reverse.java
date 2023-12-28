@@ -4,6 +4,18 @@
  */
 public class Reverse {
 	public static void main (String[] args){
-		//// Put your code here
+		String str = args[0];
+		int length = str.length()-1; 
+		// Print every char in the word from end to beginning 
+		for (int i=length; i>=0; i--) 
+		{
+			System.out.print(str.charAt(i));
+		}
+		// check whether the length of the word is even or odd and print the middle char
+		if(length%2==0) 
+		{
+			System.out.println("\n"+str.charAt((length/2)+1));
+		}
+		else System.out.println("\n"+ "The middle character is " + str.charAt(length/2));
 	}
 }
