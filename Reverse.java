@@ -14,7 +14,7 @@ public class Reverse {
 		// check whether the length of the word is even or odd and print the middle char
 		if(length%2==0) 
 		{
-			System.out.println("\n"+ "The middle character is " + str.charAt((length/2)));
+			System.out.println("\n"+ "The middle character is " + str.charAt((length/2)-1));
 		}
 		else System.out.println("\n"+ "The middle character is " + str.charAt(length/2));
 	}
